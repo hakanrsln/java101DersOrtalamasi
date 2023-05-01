@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class dersOrtalamasi {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int matematik,fizik,kimya,turkce,tarih,muzik;
+
+        System.out.println("Matematik notunu girin: ");
+        matematik = scanner.nextInt();
+
+        System.out.println("Fizik notunu girin: ");
+        fizik = scanner.nextInt();
+
+        System.out.println("kimya notunu girin: ");
+        kimya = scanner.nextInt();
+
+        System.out.println("Turkce notunu girin: ");
+        turkce = scanner.nextInt();
+
+        System.out.println("Tarih notunu girin: ");
+        tarih = scanner.nextInt();
+
+        System.out.println("Muzik notunu girin: ");
+        muzik = scanner.nextInt();
+
+       double dersOrtalamasi = (matematik+fizik+kimya+turkce+tarih+muzik)/6;
+
+        System.out.println("Dersler Ortalamasi: " + dersOrtalamasi);
+
+
+
+        boolean gecti = dersOrtalamasi >=60;
+
+        String sonuc = gecti ? "Geçtin" : "Kaldın" ;
+
+        System.out.println(sonuc);
+
+    }
+}
